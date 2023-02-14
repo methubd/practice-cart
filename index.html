@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>alhamdulillah</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body>
+    <header>
+        <!-- <h1>This is header</h1> -->
+    </header>
+    <main>
+        <section class="mx-auto mt-5 w-3/4 bg-slate-100 py-4 px-7">
+            <h1 class="text-center text-3xl font-semibold text-gray-500 mb-6">select your desired product from our
+                store...</h1>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-3 item-parent">
+                <div class="bg-slate-200 py-8 px-8">
+                    <img class="w-50" src="images/item 1.jpg" alt="">
+                    <h1 id="burger" class="text-4xl font-semibold mb-3 mt-4">Chiled Burger | <span
+                            class="text-gray-600">pure</span> </h1>
+                    <p class="text-gray-600 text-3xl font-bold">Price: $<span id="price-burger">150.21</span> </p>
+                    <p class="text-gray-600">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi assumenda
+                        animi provident, eveniet consequuntur expedita!</p>
+                    <button id="btn-burger" class="bg-lime-600 px-4 py-2 mt-3 text-white hover:bg-lime-800">Add to
+                        Cart</button>
+                    <input id="burger-qty" class="px-4 py-2 ml-5 w-1/4 text-center" type="number" placeholder="Qty">
+                </div>
+                <div class="bg-slate-200 py-8 px-8">
+                    <img class="w-50" src="images/item 1.jpg" alt="">
+                    <h1 id="salad" class="text-4xl font-semibold mb-3 mt-4">Salad | <span
+                            class="text-gray-600">pure</span> </h1>
+                    <p class="text-gray-600 text-3xl font-bold">Price: $<span id="price-salad">90.21</span> </p>
+                    <p class="text-gray-600">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi assumenda
+                        animi provident, eveniet consequuntur expedita!</p>
+                    <button id="btn-salad" class="bg-lime-600 px-4 py-2 mt-3 text-white hover:bg-lime-800 btn-cart">Add
+                        to Cart</button>
+                    <input id="salad-qty" class="px-4 py-2 ml-5 w-1/4 text-center" type="number" placeholder="Qty">
+
+                </div>
+                <div class="bg-slate-200 py-8 px-8">
+                    <img class="w-50" src="images/item 1.jpg" alt="">
+                    <h1 id="luchi" class="text-4xl font-semibold mb-3 mt-4">Luchi Tarkari | <span
+                            class="text-gray-600">pure</span> </h1>
+                    <p class="text-gray-600 text-3xl font-bold">Price: $<span id="price-luchi">85.21</span> </p>
+                    <p class="text-gray-600">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi assumenda
+                        animi provident, eveniet consequuntur expedita!</p>
+                    <button id="btn-Luchi" class="bg-lime-600 px-4 py-2 mt-3 text-white hover:bg-lime-800 btn-cart">Add
+                        to Cart</button>
+                    <input id="luchi-qty" class="px-4 py-2 ml-5 w-1/4 text-center" type="number" placeholder="Qty">
+                </div>
+            </div>
+        </section>
+
+        <!-- Calculation Counter -->
+        <section class="mx-auto mt-5 w-3/4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-3">
+                <div class="bg-slate-200 item-con" id="item-container">
+                    <h1 class="bg-slate-500 text-white px-3 font-semibold">Added Items</h1>
+                </div>
+                <div class="bg-slate-200">
+                    <h1 class="bg-slate-500 text-white px-3 font-semibold">Calculating Price</h1>
+                    <p>Chilled Burger : <span id="burgerTotal">00</span> </p>
+                    <p>Salad : <span id="saladTotal">00</span> </p>
+                    <p>Luchi : <span id="luchiTotal">00</span> </p>
+                </div>
+                <div class="bg-slate-200">
+                    <h1 class="bg-slate-500 text-white px-3 font-semibold">Final Price</h1>
+                    <p class="font-bold text-lg">Payable : <span id="payable">00</span> </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- js -->
+    <script src="js/purchase.js"></script>
+    <script src="js/utilities.js"></script>
+</body>
+
+</html>
